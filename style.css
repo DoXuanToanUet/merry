@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Panton";
+  src: url("../font/Panton-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Panton-Bold";
+  src: url("../font/Panton-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Panton-Light";
+  src: url("../font/Panton-Light.otf") format("opentype");
+}
+
+html {
+  font-family: "Panton", sans-serif;
+  line-height: 1.5;
+}
+
+.toandx {
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+input,
+button {
+  font-family: "Panton", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.content > * {
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #563d7c;
+  margin-bottom: 20px;
+}
+
+.content {
+  height: 100%;
+}
+
+.inp {
+  width: 300px;
+  height: 44px;
+  border: none;
+  border: 1px solid #ced4da;
+  outline: none;
+  padding: 0px 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #563d7c;
+  font-size: 16px;
+}
+
+.inp:focus {
+  border: 1px solid #563d7c;
+}
+
+.mess-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #563d7c;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #563d7c;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #563d7c;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #563d7c;
+  opacity: 1;
+  /* Firefox */
+}
+
+.toggle-input {
+  position: relative;
+}
+
+.toggle-input .showeye {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  border: none;
+  background-color: #563d7c;
+  padding: 15px 20px;
+  color: #fff;
+  outline: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.overlay {
+  content: "";
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.popup {
+  display: none;
+  border: 1px solid red;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding-top: 10%;
+  -webkit-box-shadow: 0 20px 35px rgba(0, 34, 69, 0.03), 0 20px 35px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 20px 35px rgba(0, 34, 69, 0.03), 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+.popup .popup-wrapper {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  background: #fff;
+  -webkit-animation: fade 0.6s ease;
+          animation: fade 0.6s ease;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.popup .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup .tt-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tt-title {
+  color: #563d7c;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
