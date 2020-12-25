@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: "Panton";
-  src: url("../font/Panton-Regular.otf") format("opentype");
+  src: url("/font/Panton-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Panton-Bold";
-  src: url("../font/Panton-Bold.otf") format("opentype");
+  src: url("/font/Panton-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Panton-Light";
-  src: url("../font/Panton-Light.otf") format("opentype");
+  src: url("/font/Panton-Light.otf") format("opentype");
 }
 
 html {
