@@ -69,15 +69,15 @@ person = [
   {
     pass: "ttl",
     header1: "Chúc em",
-    nickname: "Nick name (Linh )",
+    nickname: "Nick name (Linh + anh cũng chưa biết biệt danh )",
     mess: "Chúc em giáng sinh vui vẻ nhé ",
-    mess1: ":v",
+    mess1: "Đi quân sự vui vẻ nha ",
     mess2: ":v",
   },
   {
     pass: "huyen",
     header1: "Chúc chị ",
-    nickname: "Nick name (chưa biết :))",
+    nickname: "Nick name ( Huyền + chưa biết nick name :)) )",
     mess: "Tuy hơi muộn nhưng giáng sinh vui vẻ.",
     mess1: "Chúc chị dấu ba chấm là tất cả mọi chuyện tốt đẹp.",
     mess2: ":v",
