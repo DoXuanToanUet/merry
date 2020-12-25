@@ -12,23 +12,23 @@ person = [{
         nickname: "Nick name (Khánh dẹo)",
         mess: "Chúc bạn và Đậu sớm có tiến triển nhé",
         mess1: "Chúc bạn sớm thành công nhiều tiền để mình còn đi du lịch với bạn nhé ",
-        mess2: ""
+        mess2: ":v"
     },
     {
         pass: "nvh",
         header1: "Chào bạn hiền",
         nickname: "Nick name (Hiếu mõ)",
-        mess: "Chúc bạn và Đậu sớm có tiến triển nhé",
-        mess1: "Chúc bạn sớm thành công nhiều tiền để mình còn đi du lịch với bạn nhé ",
-        mess2: ""
+        mess: "Chúc bạn lương 20 củ còn vào nhà mình mời mình gói bim bim chứ",
+        mess1: "Kiếm nhiều tiền, tiền mình nợ bao giờ bạn lấy vợ mình trả nhé ",
+        mess2: "Nhớ ủng hộ youtube của Trun G idol nhé.À bạn mở rương đen vl :v"
     },
     {
         pass: "dtt",
         header1: "Chào dom  ",
         nickname: "Nick name (Thúy óc chó )",
         mess: "Chúc bạn sớm có người yêu",
-        mess1: "Kiếm nhiều tiền, tiền mình nợ bao giờ bạn lấy vợ mình trả nhé",
-        mess2: "À bạn mở rương đen vl :v"
+        mess1: "Kiếm nhiều tiền,nhớ nhổ tóc đấy không ăn đấm",
+        mess2: "Giới thiệu cho mình bạn của bạn xinh xinh vào "
     },
     {
         pass: "dothithu",
@@ -52,7 +52,7 @@ person = [{
         nickname: "Nick name (Hương Còi)",
         mess: "Học chăm vào",
         mess1: "Về nhà sớm thì về nấu cơm ",
-        mess2: ""
+        mess2: ":v"
     },
     {
         pass: "nnt",
@@ -60,7 +60,7 @@ person = [{
         nickname: "Nick name (Tốt đệ )",
         mess: "Anh em cố gắng lương còn có cơm mà ăn",
         mess1: "Chả biết chúc gì nữa ...",
-        mess2: ""
+        mess2: ":v"
     },
 
 ];
@@ -85,7 +85,7 @@ $(document).ready(function() {
     <div class="tt-content">
        <p><span class="lnr lnr-gift tt-gift"></span> ${mess}</p>
        <p><span class="lnr lnr-gift tt-gift"></span> ${mess1}</p>
-       <p> ${mess2}</p>
+       <p> <span class="lnr lnr-gift tt-gift"></span> ${mess2}</p>
        <p class="toandev">Lời chúc đến từ người dấu tên:Toandx</p>
     </div>`;
         return content;
