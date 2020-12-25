@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @font-face {
@@ -77,7 +79,7 @@ img {
 
 .inp {
   width: 300px;
-  height: 44px;
+  height: 46px;
   border: none;
   border: 1px solid #ced4da;
   outline: none;
@@ -126,22 +128,8 @@ img {
   /* Firefox */
 }
 
-.toggle-input {
-  position: relative;
-}
-
 .toggle-input .showeye {
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  display: block;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: -30px;
 }
 
 button {
@@ -265,6 +253,10 @@ button:hover {
   color: #BF3669;
 }
 
+.btn-mobile {
+  margin-left: 10px;
+}
+
 @media (max-width: 575px) {
   .toandx {
     top: unset;
@@ -290,12 +282,16 @@ button:hover {
   }
   .btn-mobile {
     text-align: center;
+    margin-left: 0px;
   }
   .toandev {
     font-size: 15px;
   }
   .popup .popup-wrapper {
     width: 75%;
+  }
+  .inp {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

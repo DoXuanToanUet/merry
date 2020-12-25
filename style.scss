@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    ;
 }
 
 @font-face {
@@ -74,7 +76,7 @@ img {
 
 .inp {
     width: 300px;
-    height: 44px;
+    height: 46px;
     border: none;
     border: 1px solid #ced4da;
     outline: none;
@@ -99,15 +101,9 @@ img {
 }
 
 .toggle-input {
-    position: relative;
+    // position: relative;
     .showeye {
-        position: absolute;
-        bottom: 0;
-        right: 10px;
-        display: block;
-        height: 100%;
-        display: flex;
-        align-items: center;
+        margin-left: -30px;
     }
 }
 
@@ -210,6 +206,10 @@ button {
     color: #BF3669;
 }
 
+.btn-mobile {
+    margin-left: 10px;
+}
+
 @media (max-width:575px) {
     .toandx {
         top: unset;
@@ -228,11 +228,15 @@ button {
     }
     .btn-mobile {
         text-align: center;
+        margin-left: 0px;
     }
     .toandev {
         font-size: 15px;
     }
     .popup .popup-wrapper {
         width: 75%;
+    }
+    .inp {
+        width: 100%;
     }
 }

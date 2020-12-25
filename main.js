@@ -74,6 +74,7 @@ $(document).ready(function() {
         } else {
             $("#love-input").prop("type", "password");
         }
+        $(this).toggleClass("lnr-heart-pulse");
     });
 
     //   Thuật toán về lời chúc
