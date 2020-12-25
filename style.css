@@ -228,16 +228,18 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: calc(100% - 50px);
+  position: relative;
+}
+
+.popup .tt-content p {
+  color: #563d7c;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .tt-title {
@@ -245,5 +247,55 @@ button:hover {
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.mylove {
+  height: 100%;
+}
+
+.toandev {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-style: italic;
+  color: #6b778c !important;
+}
+
+.tt-gift {
+  color: #BF3669;
+}
+
+@media (max-width: 575px) {
+  .toandx {
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mess-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  button.show-mess {
+    margin-top: 20px;
+  }
+  .btn-mobile {
+    text-align: center;
+  }
+  .toandev {
+    font-size: 15px;
+  }
+  .popup .popup-wrapper {
+    width: 75%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
