@@ -158,7 +158,6 @@ button:hover {
 
 .popup {
   display: none;
-  border: 1px solid red;
   position: fixed;
   top: 0px;
   left: 0px;
