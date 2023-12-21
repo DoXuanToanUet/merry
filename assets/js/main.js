@@ -1,3 +1,5 @@
+
+
 person = [
   {
     pass: "nht",
@@ -175,3 +177,7 @@ $(document).ready(function () {
     $(".popup").toggle();
   });
 });
+
+fetch( 'http://127.0.0.1:5500/assets/js/data.json' )
+  .then( ( response ) => response.json() )
+  .then( ( json ) => console.log( json ) );

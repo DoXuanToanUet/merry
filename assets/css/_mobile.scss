@@ -1,0 +1,30 @@
+@media (max-width: 575px) {
+	.toandx {
+		top: unset;
+		left: unset;
+		transform: unset;
+	}
+	.container {
+		width: 100%;
+		flex-direction: column;
+	}
+	.mess-form {
+		flex-direction: column;
+	}
+	button.show-mess {
+		margin-top: 20px;
+	}
+	.btn-mobile {
+		text-align: center;
+		margin-left: 0px;
+	}
+	.toandev {
+		font-size: 15px;
+	}
+	.popup .popup-wrapper {
+		width: 75%;
+	}
+	.inp {
+		width: 100%;
+	}
+}
