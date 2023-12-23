@@ -9,86 +9,18 @@ person = [
       "Chuc em iu luon khoe manh",
       "Iu anh nhieu hun nhe"
     ]
-    // nickname: "Nick name ( Trung mò )",
-    // mess: "Chúc bạn sớm có người yêu",
-    // mess1:
-    //   "Chúc bạn sớm thành công nhiều tiền để mình còn đi du lịch với bạn nhé ",
-    // mess2: "",
+
   },
-  // {
-  //   pass: "ndk",
-  //   header1: "Chào bạn hiền",
-  //   nickname: "Nick name (Khánh dẹo)",
-  //   mess: "Chúc bạn và Đậu sớm có tiến triển nhé",
-  //   mess1:
-  //     "Chúc bạn sớm thành công nhiều tiền để mình còn đi du lịch với bạn nhé ",
-  //   mess2: ":v",
-  // },
-  // {
-  //   pass: "nvh",
-  //   header1: "Chào bạn hiền",
-  //   nickname: "Nick name (Hiếu mõ)",
-  //   mess: "Chúc bạn lương 20 củ còn vào nhà mình mời mình gói bim bim chứ",
-  //   mess1: "Kiếm nhiều tiền, tiền mình nợ bao giờ bạn lấy vợ mình trả nhé ",
-  //   mess2: "Nhớ ủng hộ youtube của Trun G idol nhé.À bạn mở rương đen vl :v",
-  // },
-  // {
-  //   pass: "dtt",
-  //   header1: "Chào dom  ",
-  //   nickname: "Nick name (Thúy óc chó )",
-  //   mess: "Chúc bạn sớm có người yêu",
-  //   mess1: "Kiếm nhiều tiền,nhớ nhổ tóc đấy không ăn đấm",
-  //   mess2: "Giới thiệu cho mình bạn của bạn xinh xinh vào ",
-  // },
-  // {
-  //   pass: "dothithu",
-  //   header1: "Chào người chị dấu yêu  ",
-  //   nickname: "Nick name (Thu lợ* )",
-  //   mess: "Chúc chị tôi sớm học xong mà còn về lấy chồng chứ ",
-  //   mess1:
-  //     "Kiếm nhiều tiền thỉnh thoảng còn cho thằng em 1 tí uống trà sữa chứ ",
-  //   mess2: "Hehe",
-  // },
-  // {
-  //   pass: "dxs",
-  //   header1: "Chào ông anh   ",
-  //   nickname: "Nick name (Sơn béo )",
-  //   mess: "Chúc ông anh sớm học xong ",
-  //   mess1: "Thỉnh thoảng về anh em còn chạy cho khỏe người chứ ",
-  //   mess2: "Thúy đom và Hương còi nhắc ông anh mãi",
-  // },
-  // {
-  //   pass: "dlh",
-  //   header1: "Chào em gái",
-  //   nickname: "Nick name (Hương Còi)",
-  //   mess: "Học chăm vào",
-  //   mess1: "Về nhà sớm thì về nấu cơm ",
-  //   mess2: ":v",
-  // },
-  // {
-  //   pass: "nnt",
-  //   header1: "Chào đệ đề ",
-  //   nickname: "Nick name (Tốt đệ )",
-  //   mess: "Anh em cố gắng lương còn có cơm mà ăn",
-  //   mess1: "Chả biết chúc gì nữa ...",
-  //   mess2: ":v",
-  // },
-  // {
-  //   pass: "ttl",
-  //   header1: "Chúc em",
-  //   nickname: "Nick name (Linh + anh cũng chưa biết biệt danh )",
-  //   mess: "Chúc em giáng sinh vui vẻ nhé ",
-  //   mess1: "Đi quân sự vui vẻ nha ",
-  //   mess2: ":v",
-  // },
-  // {
-  //   pass: "huyen",
-  //   header1: "Chúc chị ",
-  //   nickname: "Nick name ( Huyền + chưa biết nick name :)) )",
-  //   mess: "Tuy hơi muộn nhưng giáng sinh vui vẻ.",
-  //   mess1: "Chúc chị dấu ba chấm là tất cả mọi chuyện tốt đẹp.",
-  //   mess2: ":v",
-  // },
+  {
+    pass: "ndk",
+    avatar: "assets/img/mylove.jpg",
+    nickname: 'Khanh deo',
+    mess: [
+      "Chuc em iu luon khoe manh",
+      "Iu anh nhieu hun nhe"
+    ]
+
+  },
 ];
 // console.log(person[0].pass);
 $(document).ready(function () {
@@ -209,11 +141,13 @@ $(document).ready(function () {
         // console.log();
         $(".mylove").html(
           showInfo(
-            "",
-            "Có thứ gì đó sai sai",
-            "Dường như mật khẩu bạn nhập không đúng ",
-            "Chúc bạn giáng sinh vui vẻ nhé :)",
-            ""
+            '',
+            'Vo danh',
+            [
+              'Chuc ban giang sinh vui ve',
+              'Nhap mat khau de thay loi chuc cho rieng ban nhe'
+            ]
+
           )
         );
       }
