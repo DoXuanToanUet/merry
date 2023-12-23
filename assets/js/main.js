@@ -178,6 +178,28 @@ $(document).ready(function () {
   });
 });
 
-fetch( 'http://127.0.0.1:5500/assets/js/data.json' )
-  .then( ( response ) => response.json() )
-  .then( ( json ) => console.log( json ) );
+// fetch( 'https://christmas.instawp.xyz/wp-json/toan/v1/person' )
+//   .then( ( response ) => response.json() )
+//   .then( ( json ) => console.log( json ) );
+(function($){
+  $.ajax({
+    url: 'https://christmas.instawp.xyz/wp-json/toan/v1/person',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "GET", /* or type:"GET" or type:"PUT" */
+    dataType: "json",
+    data: {
+    },
+    success: function (result) {
+        console.log(result);
+    },
+    error: function () {
+        console.log("error");
+    }
+});
+  //  $.post( "https://christmas.instawp.xyz/wp-json/toan/v1/person", function( data ) {
+  //   // $( ".result" ).html( data );
+  //   alert('done')
+  // });
+})(jQuery)
