@@ -3,8 +3,8 @@
 person = [
   {
     pass: "mylove",
-    avatar: "assets/img/mylove.jpg",
-    nickname: 'Tinh iu cua anh',
+    avatar: "mylove/mylove.jpg",
+    nickname: 'Tình iu của anh ',
     mess: [
       "Chuc em iu luon khoe manh",
       "Iu anh nhieu hun nhe"
@@ -13,11 +13,56 @@ person = [
   },
   {
     pass: "ndk",
-    avatar: "assets/img/mylove.jpg",
-    nickname: 'Khanh deo',
+    avatar: "khanh/khanhdeo.jpg",
+    nickname: 'Bạn Khánh dẹo',
     mess: [
-      "Chuc em iu luon khoe manh",
-      "Iu anh nhieu hun nhe"
+      "Chúc bạn hiền khỏe mạnh.",
+      "Nhiều tiền.",
+      "Sớm tán được em bạn nhé ☺️."
+    ]
+
+  },
+  {
+    pass: "nvh",
+    avatar: "hieumo/hieumo.jpg",
+    nickname: 'Bạn Hiếu mõ',
+    mess: [
+      "Chúc bạn hiền khỏe mạnh.",
+      "Nhiều tiền.",
+      "Sớm có người iu bạn nhé ☺️."
+    ]
+
+  },
+  {
+    pass: "nht",
+    avatar: "trungmo/trungmo.jpg",
+    nickname: 'Bạn Trung mò',
+    mess: [
+      "Chúc bạn hiền khỏe mạnh.",
+      "Nhiều tiền.",
+      " ☺️."
+    ]
+
+  },
+  {
+    pass: "dlh",
+    avatar: "sister/sister.jpg",
+    nickname: 'Em gái iu',
+    mess: [
+      "Chúc em gái khỏe mạnh.",
+      "Nhìu tìn.",
+      "Đi làm cho anh tìn tiêu nhá  ☺️."
+    ]
+
+  },
+  {
+    pass: "dxs",
+    avatar: "sonbeo/sonbeo.jpg",
+    nickname: 'Ông sơn béo',
+    mess: [
+      "Chúc ông anh mạnh khỏe.",
+      "Nhìu tìn.",
+      "Ra trường okie nhé  ☺️."
     ]
 
   },
@@ -47,12 +92,58 @@ $(document).ready(function () {
     }
     content = `
     <div class="person">
+    <ul class="lightrope">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <img class="santa" src="assets/img/santa-claus-illustration-free-vector.jpg"/>
+  <img class="pine-tree" src="assets/img/tree.png"/>
     <div class="person-infomation">
           <div class="image">
                 <img class="avatar" src="${avatar}" alt="">
                 <img class="ring" src="/assets/img/pngtree-christmas-snowman-avatar-frame-png-image_5920660.png" alt="">
                 <div class="name">
-                      <p>❤ ${nickname} ❤</p>
+                      <p>😘 ${nickname} 😘</p>
                 </div>
           </div>
 
@@ -128,7 +219,7 @@ $(document).ready(function () {
         // console.log();
         $(".mylove").html(
           showInfo(
-            person[checktrue].avatar,
+            `assets/img/`+person[checktrue].avatar,
             person[checktrue].nickname,
             person[checktrue].mess,
             // person[checktrue].mess,
