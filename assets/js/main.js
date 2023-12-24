@@ -6,8 +6,9 @@ person = [
     avatar: "mylove/mylove.jpg",
     nickname: 'Tình iu của anh ',
     mess: [
-      "Chuc em iu luon khoe manh",
-      "Iu anh nhieu hun nhe"
+      "Nếu nhiệt độ Âm là ốm thì hãy để any ôm, quan tâm, chăm sóc bé vượt qua mùa đông này nhá ♥️.",
+      "Iu em thương em nhìu lắm ♥️.",
+      
     ]
 
   },
@@ -141,7 +142,7 @@ $(document).ready(function () {
     <div class="person-infomation">
           <div class="image">
                 <img class="avatar" src="${avatar}" alt="">
-                <img class="ring" src="/assets/img/pngtree-christmas-snowman-avatar-frame-png-image_5920660.png" alt="">
+               
                 <div class="name">
                       <p>😘 ${nickname} 😘</p>
                 </div>
@@ -187,11 +188,11 @@ $(document).ready(function () {
 
       $(".mylove").html(
         showInfo(
-          '',
-          'Vo danh',
+          'https://png.pngtree.com/png-clipart/20210309/original/pngtree-christmas-christmas-couple-boys-avatar-png-image_5910224.jpg',
+          'Merry Christmas',
           [
-            'Chuc ban giang sinh vui ve',
-            'Nhap mat khau de thay loi chuc cho rieng ban nhe'
+            'Chúc bạn giáng sinh vui vẻ.',
+            'Nhập mật khẩu để xem những lời chúc ý nghĩa.'
           ]
 
         )
@@ -232,13 +233,13 @@ $(document).ready(function () {
         // console.log();
         $(".mylove").html(
           showInfo(
-            '',
-            'Vo danh',
+            'https://png.pngtree.com/png-clipart/20210309/original/pngtree-christmas-christmas-couple-boys-avatar-png-image_5910224.jpg',
+            'Merry Christmas',
             [
-              'Chuc ban giang sinh vui ve',
-              'Nhap mat khau de thay loi chuc cho rieng ban nhe'
+              'Chúc bạn giáng sinh vui vẻ.',
+              'Nhập mật khẩu để xem những lời chúc ý nghĩa.'
             ]
-
+  
           )
         );
       }
